@@ -9,19 +9,6 @@ import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism.css';
 
-const ex = dedent`
-  import React from "react";
-  import ReactDOM from "react-dom";
-
-  const App = () => {
-    return (
-      <h1>Hello There! It's me, Mika</h1>
-    );
-  }
-  ReactDOM.render(<App />, document.getElementById("root"));
-`;
-
-
 const CodeEditor = ({ value, type }) => {
   const [code, setCode] = useState('');
   
