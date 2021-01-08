@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import dedent from "dedent-tabs";
 import Editor from 'react-simple-code-editor';
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
