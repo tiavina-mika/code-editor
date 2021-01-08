@@ -18,16 +18,19 @@ const CodeEditor = ({ value, type }) => {
 	const handleChange = (value) => setCode(value);
 
 	return (
-		<Editor
-			value={code}
-			onValueChange={handleChange}
-			highlight={code => highlight(code, languages[type])}
-			padding={10}
-			style={{
-				fontFamily: '"Fira code", "Fira Mono", monospace',
-				fontSize: 12,
-			}}
-		/>
+    <div className="container_editor_area">
+      <Editor
+        value={code}
+        onValueChange={handleChange}
+        highlight={code => highlight(code, languages[type])}
+        padding={20}
+        style={{
+          fontFamily: '"Fira code", "Fira Mono", monospace',
+          fontSize: 12,
+        }}
+        className="container__editor"
+      />
+    </div>
 	);
 }
 
